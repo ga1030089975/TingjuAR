@@ -4,6 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
   - Button
   layers:
   - Default
@@ -17,6 +27,7 @@ TagManager:
   - 
   - 
   - 
+  - E
   - 
   - 
   - 
@@ -25,9 +36,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Focus
+  - Exhibition
   - 
   - 
   - 

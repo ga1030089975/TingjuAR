@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Demo/yubianyi/yubianyi.unity
+    guid: 6793326890e14ad4e80bf83a6715ae6b
   m_configObjects: {}

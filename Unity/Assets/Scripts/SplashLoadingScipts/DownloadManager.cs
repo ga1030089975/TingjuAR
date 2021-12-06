@@ -46,4 +46,29 @@ public class DownloadManager : MonoBehaviour
         Tippanel.SetActive(false);
         Application.Quit();
     }
+    
+    
+    //检查读写权限
+    // private void CheckWritePermission()
+    // {
+ 
+    //     if (!PlayerPrefs.HasKey("Write权限"))
+    //     {
+    //         Permission.RequestUserPermission(Permission.ExternalStorageWrite);
+    //         PlayerPrefs.SetInt("Write权限", 10);
+    //     }
+        
+    // }
+
+    //检查摄像头权限
+    // private void CheckCameraPermission()
+    // {
+    //     if (!PlayerPrefs.HasKey("Camera权限"))
+    //     {
+    //         Permission.RequestUserPermission(Permission.Camera);
+    //         PlayerPrefs.SetInt("Camera权限", 10);
+    //     }
+    // }
+
+    
 }

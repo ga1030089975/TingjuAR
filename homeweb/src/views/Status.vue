@@ -1,17 +1,17 @@
 <template>
-    <el-container style="height: 100%">
-      <el-main>
-        <h1>This is personal center page</h1>
-      </el-main>
-      <el-footer><common-footer> </common-footer></el-footer>
-    </el-container>
+   <div>
+	   <h1>This is personal center page</h1>
+   </div>
+        
 </template>
 <script>
-import CommonFooter from '../components/CommonFooter.vue'
-export default {
-  name:"Home",
-  components: { CommonFooter },    
-};
+	export default {
+		data(){
+			return{
+				
+			}
+		}
+	};
 </script>
 <style scoped>
 .el-footer{

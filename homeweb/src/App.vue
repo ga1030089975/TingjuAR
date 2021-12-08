@@ -3,7 +3,6 @@
     <router-view />
   </div>
 </template>
-<<<<<<< HEAD
 
 <script>
 
@@ -23,5 +22,4 @@ export default {
   height: 100%;
 }
 </style>
-=======
->>>>>>> 7f3b0dc989cf12528dd707f232cb2d54cfbac1f4
+

@@ -1,35 +1,42 @@
 <template>
   <el-container style="height:100%">
     <el-header height="30px">
-      <span>科学荟（待确定）</span>
+      <span>TingjuAR</span>
     </el-header>
-
     <el-main>
-      <template>
-        <el-tabs v-model="activeName" @tab-click="handleClick">
-          <el-tab-pane label="推荐" name="first" >推荐内容</el-tab-pane>
-          <el-tab-pane label="订阅" name="second">订阅内容</el-tab-pane>
-        </el-tabs>
-      </template>
+	  <router-view></router-view>
     </el-main>
-    <el-footer><common-footer> </common-footer></el-footer>
+    <el-footer>
+		<div class="footer-button">
+		  <el-button type="text" icon="el-icon-s-home" name="first" @click="toHome">
+			  首页
+		  </el-button>
+		  <el-button type="text" icon="el-icon-user" name="second" @click="toStatus">
+			  我的
+		  </el-button>
+		</div>
+	</el-footer>
   </el-container>
 </template>
 
 <script>
-import CommonFooter from '../components/CommonFooter.vue'
 export default {
-  name:"Home",
-  components: { CommonFooter },
-  data() {
-      return {
-        activeName: 'second'
-      };
+    name:"Home",
+    data() {
+        return {
+			activeName: 'second'
+        };
     },
     methods: {
-      handleClick(tab, event) {
-        console.log(tab, event);
-      },
+        handleClick(tab, event) {
+			console.log(tab, event);
+        },
+		toHome() {
+		  this.$router.push("/home/index");
+		},
+		toStatus() {
+		  this.$router.push("/home/status");
+		},
     },    
 };
 </script>
@@ -43,6 +50,21 @@ export default {
 }
 .el-main {
   padding-top: 0%;
+}
+.footer {
+  background-color: #425c5a;
+  color: #ffcea2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-button {
+  display: flex;
+  align-content: center;
+}
+.el-button {
+  color: #ffcea2;
+  padding: 10px 35px;
 }
 
 </style>

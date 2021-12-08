@@ -1,14 +1,27 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>el-button</el-button>
-    </div>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view />
   </div>
 </template>
+<<<<<<< HEAD
+
+<script>
+
+export default {
+  name: 'app',
+  components: {   
+  }
+}
+</script>
+
+<style>
+#app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+=======
+>>>>>>> 7f3b0dc989cf12528dd707f232cb2d54cfbac1f4

@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SplashLoading.unity
     guid: 11a9f328b6b1961f8bf8f6fd238a54cc
+  - enabled: 1
+    path: Assets/Scenes/ARDemo.unity
+    guid: 14d8949fd7ad848478b05362ffbe5dff
   m_configObjects: {}

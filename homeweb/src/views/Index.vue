@@ -92,7 +92,8 @@ overflow: hidden;">
 	}
 </script>
 
-<style>
+<style scoped>
+
 	.el-tabs__nav-scroll{
 	  width: 50%!important;
 	  margin: 0 auto!important;

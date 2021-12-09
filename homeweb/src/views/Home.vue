@@ -49,7 +49,7 @@ export default {
   justify-content: center;
 }
 .el-main {
-  padding-top: 0%;
+  padding: 0;
 }
 .footer {
   background-color: #425c5a;

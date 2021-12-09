@@ -65,6 +65,7 @@ export default {
 .el-button {
   color: #ffcea2;
   padding: 10px 35px;
+
 }
 
 </style>

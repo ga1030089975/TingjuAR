@@ -9,17 +9,17 @@
     <el-footer>
       <div class="footer-guid">
         <el-menu
-          :default-active="activeIndex1"
+          :default-active="activeIndex"
           class="el-menu-demo"
           mode="horizontal"
           @select="handleSelect"
           background-color="#425c5a"
           text-color="#ffcea2"
           active-text-color="#fbeae2">
-          <el-menu-item index="1"
-            ><router-link to="/home/index"
-              ><i class="el-icon-s-home"></i>首页</router-link
-            ></el-menu-item>
+          <el-menu-item index="1">
+			  <router-link to="/home/index">
+				<i class="el-icon-s-home"></i>首页</router-link>
+				</el-menu-item>
           <el-menu-item index="2"
             ><router-link to="/home/status"
               ><i class="el-icon-user"></i>我的</router-link

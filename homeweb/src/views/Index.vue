@@ -15,7 +15,7 @@
 				
 				
 				<el-card v-for="item in new_book" :key="item.id"
-				 style="margin: 10px;">
+				 style="margin: 10px;" @click.native="toDetail(item)">
 					<el-row :gutter="20">
 						<el-col :span="Math.ceil(height*0.15*0.75*24/(width))+1"
 							:style="{'padding-left':((Math.ceil(height*0.15*0.75*24/width)+1)/24*width-height*0.15*0.75)/2+'px'}">
@@ -55,7 +55,7 @@
 				</p>
 				
 				<el-card v-for="item in all_book" :key="item.id"
-				style="margin: 10px;">
+				style="margin: 10px;" @click.native="toDetail(item)">
 					<el-row :gutter="20">
 						<el-col :span="Math.ceil(height*0.15*0.75*24/width)+1"
 						:style="{'padding-left':((Math.ceil(height*0.15*0.75*24/width)+1)/24*width-height*0.15*0.75)/2+'px'}">
@@ -165,6 +165,18 @@
 			width:function(){
 				console.log(this.$getViewportSize().width);
 				return this.$getViewportSize().width;
+			}
+		},
+		methods:{
+			toDetail(item){
+				console.log(item);
+				this.$router.push({
+					path:'/home/detail',
+					name:'Detail',
+					params:{
+						data:item
+					}
+				})
 			}
 		}
 	}

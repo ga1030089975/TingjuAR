@@ -17,12 +17,12 @@
 
     <div class="select">
       <div class="card">
-        <el-card shadow="hover" style="width: 60%; height: calc(100vh * 0.09);display:flex;align-items:center;font-size:1.1em">
+        <el-card shadow="hover" style="width: 60%; height: calc(100vh * 0.09);font-size:1.1em">
           <router-link to="/home/download"><i class="el-icon-folder-opened"></i>下 载 列 表</router-link>
         </el-card>
       </div>
       <div class="card">
-        <el-card shadow="hover" style="width: 60%; height: calc(100vh * 0.09);display:flex;align-items:center;font-size:1.1em"
+        <el-card shadow="hover" style="width: 60%; height: calc(100vh * 0.09);font-size:1.1em"
           ><i class="el-icon-edit"></i>
           更 改 主 题
         </el-card>
@@ -66,6 +66,7 @@ export default {
 .el-card {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #425c5a;
   border: 1px solid #b2bfb6;
 }
@@ -80,7 +81,6 @@ export default {
 .card {
   display: flex;
   justify-content: center;
-  align-content: center;
 }
 a:-webkit-any-link {
   color: #425c5a;

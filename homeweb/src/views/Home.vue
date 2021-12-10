@@ -15,17 +15,15 @@
           @select="handleSelect"
           background-color="#425c5a"
           text-color="#ffcea2"
-          active-text-color="#fbeae2"
-          
-        >
-          <el-menu-item index="1"><router-link to="/home/index"
+          active-text-color="#fbeae2">
+          <el-menu-item index="1"
+            ><router-link to="/home/index"
               ><i class="el-icon-s-home"></i>首页</router-link
             ></el-menu-item>
           <el-menu-item index="2"
             ><router-link to="/home/status"
               ><i class="el-icon-user"></i>我的</router-link
-            ></el-menu-item
-          >
+            ></el-menu-item>
         </el-menu>
       </div>
     </el-footer>
@@ -37,18 +35,20 @@ export default {
   name: "Home",
   data() {
     return {
-      activeIndex: '1',
+      activeIndex: "1",
     };
   },
   methods: {
-     handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-     }
+    handleSelect(key, keyPath) {
+      console.log(key, keyPath);
+    },
   },
 };
 </script>
 <style>
-.el-header, .el-footer{
+.el-header,
+.el-footer {
+  padding: 0%;
   background-color: #425c5a;
   color: #ffcea2;
   display: flex;
@@ -65,19 +65,30 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.el-tabs__active-bar{
-	background-color:#425c5a
+.el-tabs__active-bar {
+  background-color: #425c5a;
 }
-.el-tabs__item:hover{
-	color:#425c5a
+.el-tabs__item:hover {
+  color: #425c5a;
 }
-.el-tabs__item.is-active{
-	color:#5e756e
+.el-tabs__item.is-active {
+  color: #5e756e;
 }
 a:-webkit-any-link {
   text-decoration: none;
 }
 .el-menu-item i {
-    color:#ffcea2;
+  color: #ffcea2;
+}
+.footer-guid{
+  width: 100%;
+
+}
+.el-menu-item{
+  width: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 </style>

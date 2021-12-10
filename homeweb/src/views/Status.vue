@@ -14,9 +14,19 @@
         />
       </div>
     </div>
- 
-        </div>
-      </el-card>
+
+    <div class="select">
+      <div class="card">
+        <el-card shadow="hover" style="width: 60%; height: 60px">
+          <router-link to="/home/download"><i class="el-icon-folder-opened"></i>我 的 下 载</router-link>
+        </el-card>
+      </div>
+      <div class="card">
+        <el-card shadow="hover" style="width: 60%; height: 60px"
+          ><i class="el-icon-edit"></i>
+          更 改 主 题
+        </el-card>
+      </div>
     </div>
   </div>
 </template>
@@ -24,6 +34,11 @@
 export default {
   data() {
     return {};
+  },
+  methods: {
+    handleClick(tab, event) {
+      console.log(tab, event);
+    },
   },
 };
 </script>
@@ -48,4 +63,31 @@ export default {
   left: 50%;
   transform: translate(-50%, -40%);
 }
+.el-card {
+  display: flex;
+  justify-content: center;
+  color: #425c5a;
+  border: 1px solid #b2bfb6;
+}
+
+.select {
+  height: calc(100vh * 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transform: translate(0%, 25%);
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+a:-webkit-any-link {
+  color: #425c5a;
+  text-decoration: none;
+}
+.el-icon-folder-opened,.el-icon-edit{
+  padding-inline: 10px;
+}
+
 </style>

@@ -94,6 +94,7 @@
 			</el-tab-pane>
 
 		</el-tabs>
+
 	</div>
 </template>
 
@@ -127,21 +128,21 @@
 				],
 				all_book:[
 					{
-						id:1,
+						id:4,
 						img:require("../assets/book1.png"),
 						name:'消失的世界',
 						type:'AR绘本',
 						detail:'冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。'
 					},
 					{
-						id:2,
+						id:5,
 						img:require("../assets/book2.png"),
 						name:'消失的世界2',
 						type:'科普图书',
 						detail:'冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。'
 					},
 					{
-						id:3,
+						id:6,
 						img:require("../assets/book3.png"),
 						name:'消失的世界3',
 						type:'益智游戏',
@@ -167,7 +168,8 @@
 	}
 </script>
 
-<style>
+<style scoped>
+
 	.el-tabs__nav-scroll{
 	  width: 50%!important;
 	  margin: 0 auto!important;
@@ -196,3 +198,4 @@
 		overflow: hidden;
 	}
 </style>
+

@@ -40,7 +40,7 @@ export default {
     },    
 };
 </script>
-<style scoped>
+<style>
 .el-header, .el-footer{
   background-color: #425c5a;
   color: #ffcea2;
@@ -65,7 +65,20 @@ export default {
 .el-button {
   color: #ffcea2;
   padding: 10px 35px;
+}
 
+/* .el-tabs__nav-scroll{
+    width: 50%!important;
+    margin: 0 auto!important;
+} */
+.el-tabs__active-bar{
+	background-color:#425c5a
+}
+.el-tabs__item:hover{
+	color:#425c5a
+}
+.el-tabs__item.is-active{
+	color:#5e756e
 }
 
 </style>

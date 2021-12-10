@@ -17,7 +17,9 @@
 
     <div class="select">
       <div class="card">
-        <el-card shadow="hover" style="width: 60%; height: 60px">
+        <el-card shadow="hover" 
+			style="width: 60%; height: calc(100vh * 0.09);
+				display: flex;align-items: center;">
           <router-link to="/home/download"><i class="el-icon-folder-opened"></i>我 的 下 载</router-link>
         </el-card>
       </div>

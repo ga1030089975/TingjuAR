@@ -10,14 +10,15 @@
 				
 			
 				<p style="font-family: 'PingFang SC'; margin-left: 10px;" >
-					最新书籍
+					推荐产品
 				</p>
 				
 				
 				<el-card v-for="item in new_book" :key="item.id"
 				 style="margin: 10px;">
 					<el-row :gutter="20">
-						<el-col :span="Math.ceil(height*0.15*0.75*24/(width))+1">
+						<el-col :span="Math.ceil(height*0.15*0.75*24/(width))+1"
+							:style="{'padding-left':((Math.ceil(height*0.15*0.75*24/width)+1)/24*width-height*0.15*0.75)/2+'px'}">
 							<img :src="item.img" :height="height*0.15 + 'px'"
 							 :width="height*0.15*0.75 + 'px'"/>
 						</el-col>
@@ -54,13 +55,14 @@
 				</p>
 				
 				<el-card v-for="item in all_book" :key="item.id"
-				 style="margin: 10px;">
+				style="margin: 10px;">
 					<el-row :gutter="20">
-						<el-col :span="Math.ceil(height*0.15*0.75*24/(width))+1">
+						<el-col :span="Math.ceil(height*0.15*0.75*24/width)+1"
+						:style="{'padding-left':((Math.ceil(height*0.15*0.75*24/width)+1)/24*width-height*0.15*0.75)/2+'px'}">
 							<img :src="item.img" :height="height*0.15 + 'px'"
 							 :width="height*0.15*0.75 + 'px'"/>
 						</el-col>
-						<el-col :span="23-Math.ceil(height*0.15*0.75*24/(width))"
+						<el-col :span="22-Math.ceil(height*0.15*0.75*24/width)"
 						 :style="{'height':height*0.15 + 'px'}">
 							<el-row :style="{height:height*0.15*0.2+'px'}">
 								<el-col>
@@ -98,7 +100,7 @@
 	</div>
 </template>
 
-<script scoped>
+<script>
 	export default{
 		data(){
 			return{
@@ -168,21 +170,8 @@
 	}
 </script>
 
-<style scoped>
+<style>
 
-	.el-tabs__nav-scroll{
-	  width: 50%!important;
-	  margin: 0 auto!important;
-	}
-	.el-tabs__active-bar{
-		background-color:#425c5a
-	}
-	.el-tabs__item:hover{
-		color:#425c5a
-	}
-	.el-tabs__item.is-active{
-		color:#5e756e
-	}
 	.el-card__body{
 		padding: 10px;
 	}

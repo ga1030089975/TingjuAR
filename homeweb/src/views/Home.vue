@@ -1,43 +1,50 @@
 <template>
-  <el-container style="height:100%">
+  <el-container style="height: 100%">
     <el-header height="30px">
       <span>TingjuAR</span>
     </el-header>
     <el-main>
-	  <router-view></router-view>
+      <router-view></router-view>
     </el-main>
     <el-footer>
-		<div class="footer-button">
-		  <el-button type="text" icon="el-icon-s-home" name="first" @click="toHome">
-			  首页
-		  </el-button>
-		  <el-button type="text" icon="el-icon-user" name="second" @click="toStatus">
-			  我的
-		  </el-button>
-		</div>
-	</el-footer>
+      <div class="footer-guid">
+        <el-menu
+          :default-active="activeIndex1"
+          class="el-menu-demo"
+          mode="horizontal"
+          @select="handleSelect"
+          background-color="#425c5a"
+          text-color="#ffcea2"
+          active-text-color="#fbeae2"
+          
+        >
+          <el-menu-item index="1"><router-link to="/home/index"
+              ><i class="el-icon-s-home"></i>首页</router-link
+            ></el-menu-item>
+          <el-menu-item index="2"
+            ><router-link to="/home/status"
+              ><i class="el-icon-user"></i>我的</router-link
+            ></el-menu-item
+          >
+        </el-menu>
+      </div>
+    </el-footer>
   </el-container>
 </template>
 
 <script>
 export default {
-    name:"Home",
-    data() {
-        return {
-			activeName: 'second'
-        };
-    },
-    methods: {
-        handleClick(tab, event) {
-			console.log(tab, event);
-        },
-		toHome() {
-		  this.$router.push("/home/index");
-		},
-		toStatus() {
-		  this.$router.push("/home/status");
-		},
-    },    
+  name: "Home",
+  data() {
+    return {
+      activeIndex: '1',
+    };
+  },
+  methods: {
+     handleSelect(key, keyPath) {
+        console.log(key, keyPath);
+     }
+  },
 };
 </script>
 <style>
@@ -58,19 +65,6 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.footer-button {
-  display: flex;
-  align-content: center;
-}
-.el-button {
-  color: #ffcea2;
-  padding: 10px 35px;
-}
-
-/* .el-tabs__nav-scroll{
-    width: 50%!important;
-    margin: 0 auto!important;
-} */
 .el-tabs__active-bar{
 	background-color:#425c5a
 }
@@ -80,5 +74,10 @@ export default {
 .el-tabs__item.is-active{
 	color:#5e756e
 }
-
+a:-webkit-any-link {
+  text-decoration: none;
+}
+.el-menu-item i {
+    color:#ffcea2;
+}
 </style>

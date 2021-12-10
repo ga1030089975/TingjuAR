@@ -173,7 +173,6 @@ public class LinkImageText : Text, IPointerClickHandler
         foreach (var hrefInfo in m_HrefInfos)
         {
             hrefInfo.boxes.Clear();
-            // Debug.Log("chu li baowei kuang");
             if (hrefInfo.startIndex >= toFill.currentVertCount)
             {
                 continue;
@@ -263,10 +262,10 @@ public class LinkImageText : Text, IPointerClickHandler
         Vector2 lp;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(
             rectTransform, eventData.position, eventData.pressEventCamera, out lp);
-        // print("onpoint");
         foreach (var hrefInfo in m_HrefInfos)
         {
             var boxes = hrefInfo.boxes;
+            print(boxes.Count);
             for (var i = 0; i < boxes.Count; ++i)
             {
                 if (boxes[i].Contains(lp))

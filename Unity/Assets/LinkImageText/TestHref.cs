@@ -12,7 +12,6 @@ public class TestHref : MonoBehaviour {
     void Awake()
     {
         textPic = GetComponent<LinkImageText>();
-        // print("test");
     }
 
     void OnEnable()
@@ -28,18 +27,19 @@ public class TestHref : MonoBehaviour {
     private void OnHrefClick(string hrefName)
     {
         Debug.Log("点击了 " + hrefName);
-        switch (hrefName)
-        {
-            case "fwxy":
-                userGo.SetActive(true);
-                privacyGo.SetActive(false);
-                break;
-            case "yszc":
-                userGo.SetActive(false);
-                privacyGo.SetActive(true);
-                break;
-            default:
-                break;
-        }
+        print("yes");
+        // switch (hrefName)
+        // {
+        //     case "fwxy":
+        //         userGo.SetActive(true);
+        //         privacyGo.SetActive(false);
+        //         break;
+        //     case "yszc":
+        //         userGo.SetActive(false);
+        //         privacyGo.SetActive(true);
+        //         break;
+        //     default:
+        //         break;
+        // }
     }
 }

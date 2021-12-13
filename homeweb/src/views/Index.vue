@@ -89,8 +89,8 @@
 						</el-col>
 					</el-row>
 				</el-card>
-				
 			</el-tab-pane>
+			
 			<el-tab-pane label="我的下载" name="second">
 				订阅内容
 			</el-tab-pane>

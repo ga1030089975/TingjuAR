@@ -116,39 +116,88 @@
 					{
 						id:1,
 						img:require("../assets/book1.png"),
+						mainimg:require("../assets/lunbo3.png"),
+						mainimg_color:"rgba(49, 95, 25, 0.89)",
+						imglist:[
+							{name:'list1',img:require("../assets/xiaoshideshijie/xiaoshi1.png")},
+							{name:'list2',img:require("../assets/xiaoshideshijie/xiaoshi2.png")},
+							{name:'list3',img:require("../assets/xiaoshideshijie/xiaoshi3.png")},
+							{name:'list4',img:require("../assets/xiaoshideshijie/xiaoshi4.png")}
+						],
 						name:'消失的世界',
 						type:'AR绘本',
-						detail:'冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。'
+						detail:'冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。如今，这些动物在AR（增强现实）技术下，又重新活了过来！通过手机扫描，就能一起重温巨脉蜻蜓、蛇颈龙、始祖鸟、冠龙、剑齿虎、大角鹿、渡渡鸟、甲龙等珍稀动物的前世今生。如果扫描封面、扉页、尾页又会发现什么呢，来试试吧！',
+						zuixindongtai:'消失的世界绘本1.0已经全面上线'
 					},
 					{
 						id:2,
 						img:require("../assets/book2.png"),
-						name:'消失的世界2',
+						mainimg:require("../assets/lunbo1.png"),
+						mainimg_color:"#4e6144",
+						imglist:[
+							{name:'list1',img:require("../assets/kexue1/shangce1.png")},
+							{name:'list2',img:require("../assets/kexue1/shangce2.png")},
+							{name:'list3',img:require("../assets/kexue1/shangce3.png")},
+							{name:'list4',img:require("../assets/kexue1/shangce4.png")},
+							{name:'list5',img:require("../assets/kexue1/shangce5.jpg")},
+							{name:'list6',img:require("../assets/kexue1/shangce6.png")}
+						],
+						name:'小学科学三年级上册',
 						type:'科普图书',
-						detail:'冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。'
+						detail:'小学科学三年级下册共有六个章节，分别是“探究技能”、“植物的生命周期”、“动物的生命周期”、“水的三态”、“天气与气候”、“制作观测天气的工具”。来了解世界的神奇吧！',
+						zuixindongtai:'小学科学三年级上册新鲜出炉啦！'
 					}
 				],
 				all_book:[
 					{
 						id:4,
 						img:require("../assets/book1.png"),
+						mainimg:require("../assets/lunbo3.png"),
+						mainimg_color:"rgba(49, 95, 25, 0.89)",
+						imglist:[
+							{name:'list1',img:require("../assets/xiaoshideshijie/xiaoshi1.png")},
+							{name:'list2',img:require("../assets/xiaoshideshijie/xiaoshi2.png")},
+							{name:'list3',img:require("../assets/xiaoshideshijie/xiaoshi3.png")},
+							{name:'list4',img:require("../assets/xiaoshideshijie/xiaoshi4.png")}
+						],
 						name:'消失的世界',
 						type:'AR绘本',
-						detail:'冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。'
+						detail:'冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。如今，这些动物在AR（增强现实）技术下，又重新活了过来！通过手机扫描，就能一起重温巨脉蜻蜓、蛇颈龙、始祖鸟、冠龙、剑齿虎、大角鹿、渡渡鸟、甲龙等珍稀动物的前世今生。如果扫描封面、扉页、尾页又会发现什么呢，来试试吧！',
+						zuixindongtai:'消失的世界绘本1.0已经全面上线'
 					},
 					{
 						id:5,
 						img:require("../assets/book2.png"),
-						name:'消失的世界2',
+						mainimg:require("../assets/lunbo1.png"),
+						mainimg_color:"#4e6144",
+						imglist:[
+							{name:'list1',img:require("../assets/kexue1/shangce1.png")},
+							{name:'list2',img:require("../assets/kexue1/shangce2.png")},
+							{name:'list3',img:require("../assets/kexue1/shangce3.png")},
+							{name:'list4',img:require("../assets/kexue1/shangce4.png")},
+							{name:'list5',img:require("../assets/kexue1/shangce5.jpg")},
+							{name:'list6',img:require("../assets/kexue1/shangce6.png")}
+						],
+						name:'小学科学三年级上册',
 						type:'科普图书',
-						detail:'冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。'
+						detail:'小学科学三年级下册共有六个章节，分别是“探究技能”、“植物的生命周期”、“动物的生命周期”、“水的三态”、“天气与气候”、“制作观测天气的工具”。来了解世界的神奇吧！',
+						zuixindongtai:'小学科学三年级上册新鲜出炉啦！'
 					},
 					{
 						id:6,
-						img:require("../assets/book3.png"),
-						name:'消失的世界3',
-						type:'益智游戏',
-						detail:'冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。'
+						img:require("../assets/book1.png"),
+						mainimg:require("../assets/lunbo3.png"),
+						mainimg_color:"rgba(49, 95, 25, 0.89)",
+						imglist:[
+							{name:'list1',img:require("../assets/xiaoshideshijie/xiaoshi1.png")},
+							{name:'list2',img:require("../assets/xiaoshideshijie/xiaoshi2.png")},
+							{name:'list3',img:require("../assets/xiaoshideshijie/xiaoshi3.png")},
+							{name:'list4',img:require("../assets/xiaoshideshijie/xiaoshi4.png")}
+						],
+						name:'消失的世界',
+						type:'AR绘本',
+						detail:'冈瓦纳古陆（Gondwanaland)是一片消失的大陆。数百万年前生活着各种各样的生物，有些和现在的生物迥异，另一些则在许多方面仍十分相似。如今，这些动物在AR（增强现实）技术下，又重新活了过来！通过手机扫描，就能一起重温巨脉蜻蜓、蛇颈龙、始祖鸟、冠龙、剑齿虎、大角鹿、渡渡鸟、甲龙等珍稀动物的前世今生。如果扫描封面、扉页、尾页又会发现什么呢，来试试吧！',
+						zuixindongtai:'消失的世界绘本1.0已经全面上线'
 					}
 				]
 			};

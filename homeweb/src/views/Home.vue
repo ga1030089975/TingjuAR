@@ -12,7 +12,6 @@
           :default-active="activeIndex"
           class="el-menu-demo"
           mode="horizontal"
-          @select="handleSelect"
           background-color="#425c5a"
           text-color="#ffcea2"
           active-text-color="#fbeae2">
@@ -39,9 +38,7 @@ export default {
     };
   },
   methods: {
-    handleSelect(key, keyPath) {
-      console.log(key, keyPath);
-    },
+    
   },
 };
 </script>

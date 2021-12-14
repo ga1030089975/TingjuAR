@@ -17,14 +17,31 @@
 
     <div class="select">
       <div class="card">
-        <el-card shadow="hover" style="width: 60%; height: calc(100vh * 0.09);font-size:1.1em">
-          <router-link to="/home/download"><i class="el-icon-folder-opened"></i>下 载 列 表</router-link>
+        <el-card
+          shadow="hover"
+          style="width: 60%; height: calc(100vh * 0.09); font-size: 1.1em"
+          ><i class="el-icon-edit"></i>
+          更 改 主 题
         </el-card>
       </div>
       <div class="card">
-        <el-card shadow="hover" style="width: 60%; height: calc(100vh * 0.09);font-size:1.1em"
-          ><i class="el-icon-edit"></i>
-          更 改 主 题
+        <el-card
+          shadow="hover"
+          style="width: 60%; height: calc(100vh * 0.09); font-size: 1.1em"
+        >
+          <router-link to="/home/download"
+            ><i class="el-icon-refresh"></i>检 查 更 新</router-link
+          >
+        </el-card>
+      </div>
+      <div class="card">
+        <el-card
+          shadow="hover"
+          style="width: 60%; height: calc(100vh * 0.09); font-size: 1.1em"
+        >
+          <router-link to="/home/download"
+            ><i class="el-icon-delete"></i>清 除 缓 存</router-link
+          >
         </el-card>
       </div>
     </div>
@@ -86,8 +103,9 @@ a:-webkit-any-link {
   color: #425c5a;
   text-decoration: none;
 }
-.el-icon-folder-opened,.el-icon-edit{
+.el-icon-refresh,
+.el-icon-delete,
+.el-icon-edit {
   padding-inline: 10px;
 }
-
 </style>

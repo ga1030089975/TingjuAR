@@ -78,7 +78,7 @@
 </template>
 
 <script>
-	import BScroll from 'better-scroll';
+
 	export default {
 	    name: "ReserveInfo",
 	    data() {

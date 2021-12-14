@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class testhref : MonoBehaviour {
+public class TestHref : MonoBehaviour {
 
     private HyperlinkText mHyperlinkText;
     public GameObject userGo;
@@ -35,12 +35,10 @@ public class testhref : MonoBehaviour {
         switch (info)
         {
             case "yhxy":
-                UserAndPrivacy.SetActive(true);
                 userGo.SetActive(true);
                 privacyGo.SetActive(false);
                 break;
             case "yszc":
-                UserAndPrivacy.SetActive(true);
                 userGo.SetActive(false);
                 privacyGo.SetActive(true);
                 break;

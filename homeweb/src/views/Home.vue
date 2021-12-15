@@ -8,13 +8,12 @@
     </el-main>
     <el-footer>
       <div class="footer-guid">
-        <el-menu
-          :default-active="activeIndex"
+        <el-menu :default-active="activeIndex"
           class="el-menu-demo"
-          mode="horizontal"
-          background-color="#425c5a"
-          text-color="#ffcea2"
-          active-text-color="#fbeae2">
+          mode="horizontal">
+<!-- 		  background-color="#425c5a"
+		  text-color="#ffcea2"
+		  active-text-color="#fbeae2" -->
           <el-menu-item index="1">
 			  <router-link to="/home/index">
 				<i class="el-icon-s-home"></i>首页</router-link>
@@ -43,26 +42,25 @@ export default {
 };
 </script>
 <style>
-.el-header,
-.el-footer {
+/* .el-header,.el-footer {
   padding: 0%;
   background-color: #425c5a;
   color: #ffcea2;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.el-main {
+} */
+/* .el-main {
   padding: 0;
-}
-.footer {
+} */
+/* .footer {
   background-color: #425c5a;
   color: #ffcea2;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.el-tabs__active-bar {
+} */
+/* .el-tabs__active-bar {
   background-color: #425c5a;
 }
 .el-tabs__item:hover {
@@ -87,5 +85,5 @@ a:-webkit-any-link {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 </style>

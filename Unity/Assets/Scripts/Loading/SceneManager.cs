@@ -51,7 +51,32 @@
 //         else
 //         {
 //             url = Global.LOCAL_RES_URL + "Home/" + Global.BookName[Global.BookIndex] + "/" + Global.NextSceneName + ".unity3d";
-//         }
+//         }	
+    
+//     public static void CreateFoldforPhoto()
+// 	{
+// #if UNITY_EDITOR
+//        SavePhotoPath = Application.persistentDataPath + "/科学荟/";
+//        SaveHTMLFPhotoPath = Application.persistentDataPath + "/科学荟/";
+// #elif UNITY_IPHONE
+// 		SavePhotoPath = Application.persistentDataPath + "/";
+//        SaveHTMLFPhotoPath = Application.persistentDataPath + "/";
+// #elif UNITY_ANDROID
+//        string sb = Application.persistentDataPath;
+//        // string[] sbone = sb.Split(new string[] { "/Android/" },StringSplitOptions.None);
+//        string[] sbone = sb.Split(new string[] { "/Android/" },StringSp);
+//        SavePhotoPath =sbone[0]+ "/DCIM/科学荟/";
+//        SaveHTMLFPhotoPath =sbone[0]+"/DCIM/";
+// #endif
+//        if (!Directory.Exists(SavePhotoPath))
+// 		{
+// 			Directory.CreateDirectory(SavePhotoPath);
+// 		}
+//        if (!Directory.Exists(LOCAL_RES_PATH))
+//        {
+//            Directory.CreateDirectory(LOCAL_RES_PATH);
+//        }
+// 	}
 //         StartCoroutine(loadingFromAssetBundle()); //加载url对应的场景
 //     }
 

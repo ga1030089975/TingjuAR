@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="zhuti1" ref="app">
     <router-view />
   </div>
 </template>
@@ -20,6 +20,7 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
+  --themeColor:#008cff;
 }
 </style>
 

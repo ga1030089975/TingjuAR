@@ -41,15 +41,6 @@
 			<h4 style="padding: 20px;">产品预览</h4>
 		</div>
 		
-	<!-- 	<div>
-			<div class="person-wrap" ref="personWrap" style="width: 100%;">
-				<ul class="person-list" ref="personTab">
-					<img :width="width*0.7+'px'" v-for="item in data.imglist" 
-							:key="item.name" :src="item.img" 
-							style="padding-right: 20px;"/>
-				</ul>
-			</div>	
-		</div> -->
 		
 		
 		<div>
@@ -78,7 +69,7 @@
 </template>
 
 <script>
-	import BScroll from 'better-scroll';
+
 	export default {
 	    name: "ReserveInfo",
 	    data() {

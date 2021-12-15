@@ -22,6 +22,7 @@
             ><router-link to="/home/status"
               ><i class="el-icon-user"></i>我的</router-link
             ></el-menu-item>
+
         </el-menu>
       </div>
     </el-footer>
@@ -37,7 +38,16 @@ export default {
     };
   },
   methods: {
-    
+    toStatus() {
+      {
+        this.$router.push({ path: "/home/status" });
+      }
+    },
+    toHome() {
+      {
+        this.$router.push({ path: "/home" });
+      }
+    },
   },
 };
 </script>
@@ -75,11 +85,10 @@ a:-webkit-any-link {
 .el-menu-item i {
   color: #ffcea2;
 }
-.footer-guid{
+.footer-guid {
   width: 100%;
-
 }
-.el-menu-item{
+.el-menu-item {
   width: 50%;
   font-size: 16px;
   display: flex;

@@ -92,8 +92,9 @@ a:-webkit-any-link {
   color: #425c5a;
   text-decoration: none;
 }
-.el-icon-folder-opened,.el-icon-edit{
+.el-icon-refresh,
+.el-icon-delete,
+.el-icon-edit {
   padding-inline: 10px;
 }
-
 </style>

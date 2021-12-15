@@ -5,7 +5,8 @@ using UnityEngine;
 public class DownloadManager : MonoBehaviour
 {
     public GameObject Tippanel;
-    
+    public GameObject userPanel;
+    public GameObject privacyPanel;
     private bool agree = false;
     // Start is called before the first frame update
     //start会对一些权限进行探测
@@ -55,7 +56,16 @@ public class DownloadManager : MonoBehaviour
         Tippanel.SetActive(false);
         Application.Quit();
     }
-    
+    public void OnUserPanelClosed()
+    {
+        userPanel.SetActive(false);
+    }
+
+    public void OnPrivacyPanelClosed()
+    {
+        privacyPanel.SetActive(false);
+    }
+
     
     //检查读写权限
     // private void CheckWritePermission()
